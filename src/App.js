@@ -51,7 +51,7 @@ class App extends React.Component{
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/">About</Link>
                 <Link className="nav-link" to="/portfolio">Portfolio</Link>
                 <Link className="nav-link" to="/contact">Contact</Link>
 
@@ -60,7 +60,8 @@ class App extends React.Component{
           </Navbar>
 
           <Route exact path="/" render={() => <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>} />
-          <Route path="/about" render={() => <AboutPage title={this.state.about.title}/>} />
+          {/* <Route path="/about" render={() => <AboutPage title={this.state.about.title}/>} /> */}
+          <Route exact path="/react_portfolio" render={() => <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>} />
           <Route path="/portfolio" render={() => <PortfolioPage title={this.state.portfolio.title} subTitle={this.state.portfolio.subTitle} text={this.state.portfolio.text}/>} />
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title}/>} />
 
