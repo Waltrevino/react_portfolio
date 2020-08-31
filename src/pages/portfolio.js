@@ -4,7 +4,7 @@ import Cards from "../components/Cards";
 
 function PortfolioPage(props){
     return (
-        <div>
+        <div className="">
             <Hero title={props.title} subTitle={props.subTitle} text={props.text} />
             <Cards />
         </div>
