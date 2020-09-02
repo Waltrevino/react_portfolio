@@ -1,7 +1,7 @@
 import React from "react";
 
 import prework_about_me from "../assets/images/prework_about_me.png";
-import weather_dashboard from "../assets/images/weather_dashboard.png";
+import weather_dashboard from "../assets/images/weather_dashboard1.png";
 import quiz_challenge from "../assets/images/quiz_challenge.png";
 import readme_generator from "../assets/images/readme_generator.gif";
 import fitness_tracker from "../assets/images/fitness_tracker.gif";
@@ -50,12 +50,12 @@ class Cards extends React.Component{
                     imgSrc: pocketdiy1,
                     appLink: "https://pocketdiy.herokuapp.com/",
                     githubLink: "https://github.com/coreyspratlan/PocketDIY"
-                }
+                },
             ]
         }
     }
 
-    renderCards = (items) => {
+    renderProjects = (items) => {
         return items.map(item => {
             return <Card item={item} key={item.id}/>
         })
@@ -63,9 +63,11 @@ class Cards extends React.Component{
 
     render() {
         return(
-            <Container fluid={true} className="">
-                <Row className="justify-content-around">
-                    {this.renderCards(this.state.items)}
+            <Container fluid={true} className="cards-row-container d-flex">
+                <Row className="d-flex d-line justify-content-center">
+                   
+                    {this.renderProjects(this.state.items)}
+                   
                 </Row>
             </Container>
         );
