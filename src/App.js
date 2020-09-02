@@ -44,8 +44,8 @@ class App extends React.Component{
   render(){
     return (
       <Router>
-        <Container fluid={false} style={{ minHeight: "100vh" }} className="cabron-container h-100">
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
+        <Container fluid={false} className="main-container p-0">
+          <Navbar className="border-bottom" bg="transparent" expand="lg" style={{height: 75}}>
             <Navbar.Brand>Walter Zapata Echols</Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
@@ -58,13 +58,14 @@ class App extends React.Component{
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-        <div className="">
+        <div className="content-wrap">
           <Route exact path="/" render={() => <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>} />
           {/* <Route path="/about" render={() => <AboutPage title={this.state.about.title}/>} /> */}
           <Route exact path="/react_portfolio" render={() => <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>} />
           <Route path="/portfolio" render={() => <PortfolioPage title={this.state.portfolio.title} subTitle={this.state.portfolio.subTitle} text={this.state.portfolio.text}/>} />
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title}/>} />
         </div>
+
         <Footer />
 
         </Container>

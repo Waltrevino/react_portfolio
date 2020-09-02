@@ -40,7 +40,7 @@ function ContactForm() {
             <p className="lead">If you want to know more about me or have any questions, fill the form and send me an email.</p><p className="lead"> You can also reach me via one of the links below to learn more about me.</p>
 
           </Card.Body>
-          <Card.Footer className="bg-light">
+          {/* <Card.Footer className="bg-light">
             <div className="d-flex justify-content-around">
               <ExternalLink href="https://github.com/Waltrevino"><i className="fab fa-github-square fa-3x"></i>
               </ExternalLink>
@@ -50,7 +50,7 @@ function ContactForm() {
               <ExternalLink href="https://www.facebook.com"> <i className="fab fa-facebook-square fa-3x"></i>
               </ExternalLink>
             </div>
-          </Card.Footer>
+          </Card.Footer> */}
 
         </Card>
       </Col>
