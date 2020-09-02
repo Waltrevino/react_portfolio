@@ -45,7 +45,7 @@ class App extends React.Component{
     return (
       <Router>
         <Container fluid={false} className="main-container p-0">
-          <Navbar className="border-bottom" bg="transparent" expand="lg" style={{height: 75}}>
+          <Navbar className="border-bottom" bg="transparent" expand="lg" style={{minHeight: 75}}>
             <Navbar.Brand>Walter Zapata Echols</Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
