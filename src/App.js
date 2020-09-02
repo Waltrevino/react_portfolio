@@ -54,7 +54,6 @@ class App extends React.Component{
                 <Link className="nav-link" to="/">About</Link>
                 <Link className="nav-link" to="/portfolio">Portfolio</Link>
                 <Link className="nav-link" to="/contact">Contact</Link>
-
               </Nav>
             </Navbar.Collapse>
           </Navbar>

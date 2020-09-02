@@ -7,13 +7,12 @@ function AboutContainer() {
     return (
         <Row className="mx-4">
             <Col md={6}>
-                <Card className="border-0 ">
-
-  <Row>
-    <Col xs={6} md={12}>
-    <Image src={portfolio_img} className="img-fluid" roundedCircle />
-    </Col>
-  </Row>
+                <Card className="border-0">
+                    <Row className="d-flex justify-content-center">
+                        <Col xs={6} md={12}>
+                        <Image src={portfolio_img} className="img-fluid" roundedCircle />
+                        </Col>
+                    </Row>
                 </Card>
             </Col>
             <Col md={6}>

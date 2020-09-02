@@ -7,7 +7,7 @@ function Card(props) {
             <div class="project-header text-center font-weight-bold text-light">
                 {props.item.title}
             </div>
-            <div className="card-bod d-flex justify-content-center">
+            <div className="card-body d-flex justify-content-center">
             <img className="card-image" src={props.item.imgSrc} alt={props.item.imgSrc} />
             </div>
             <div class="project-footer d-flex justify-content-around">
