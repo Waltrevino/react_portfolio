@@ -57,7 +57,7 @@ class Cards extends React.Component{
 
     renderProjects = (items) => {
         return items.map(item => {
-            return <Card item={item} key={item.id}/>
+            return <Card item={item} key={item.id} md={12}/>
         })
     }
 
