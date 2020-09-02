@@ -57,17 +57,17 @@ class Cards extends React.Component{
 
     renderProjects = (items) => {
         return items.map(item => {
-            return <Card item={item} key={item.id} md={12}/>
+            return <Card item={item} key={item.id}/>
         })
     }
 
     render() {
         return(
-            <Container fluid={true} className="cards-row-container d-flex">
-                <Row className="d-flex d-line justify-content-center">
-                   
+            <Container fluid={true} className="cards-row-container">
+                <Row className="d-flex justify-content-center">
+                    <Col className="flex-column justify-content-center d-flex" sm={12} md={8}>
                     {this.renderProjects(this.state.items)}
-                   
+                    </Col>
                 </Row>
             </Container>
         );
