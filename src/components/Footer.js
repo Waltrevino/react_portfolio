@@ -1,17 +1,28 @@
 import React from "react";
-
+import { ExternalLink } from "react-external-link"
 import { Container, Row, Col } from "react-bootstrap";
 
-function Footer(){
+function Footer() {
     return (
-        <footer className="footer">
-            <Container fluid={false}>
-                <Row className="border-top justify-content-center p-3">
-                    <Col className="p-0 text-center" md={12} sm={12}>
-                    <p>Copyight &copy; 2020 by <span className="font-weight-bold">Walter Zapata Echols</span>. All Rights Reserved</p>
-                    </Col>
-                </Row>
-            </Container>
+        <footer className="footer d-flex border-top">
+            <div className="footer-container align-self-center w-100">
+            <Row className="footer-content d-flex justify-content-around">
+
+                <div className="">
+                    <ExternalLink href="https://github.com/Waltrevino"><i className="fab fa-github-square fa-3x"></i>
+                    </ExternalLink>
+                </div>
+                <div className="footer-block-center text-center">
+                    <div>Walter Zapata Echols</div>
+                    <div className="copyright">&copy; {new Date().getFullYear()}  <span > &nbsp;WZE, Inc.</span></div>
+                </div>
+                <div>
+                    <ExternalLink href="https://www.linkedin.com/in/walter-echols-01013813b/">
+                        <i className="fab fa-linkedin fa-3x"></i>
+                    </ExternalLink>
+                </div>
+            </Row>
+            </div>
         </footer>
     )
 }
